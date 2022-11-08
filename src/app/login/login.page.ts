@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
+/*
   ingresar(){
     let navigationExtras: NavigationExtras = {
       state: {
@@ -49,6 +49,21 @@ export class LoginPage implements OnInit {
       this.presentToast("Falta: "+this.field);
     }
   }
+  */
+ 
+  ingresar(){
+    // Se valida que el usuario ingreso todos los datos
+    if(this.validateModel(this.login)){
+      // Se obtiene si existe alguna data de sesión
+      this.authenticationSerive.login(this.login);
+    
+      
+    }
+    else{
+      this.presentToast("Falta: "+this.field);
+    }
+  }
+
   registrar(){
     this.createSesionData(this.login);
   }
