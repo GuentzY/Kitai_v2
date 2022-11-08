@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DbserviceService } from '../services/dbservice.service';
 import { AutenthicationService } from '../services/autenthication.service';
 
@@ -10,8 +10,17 @@ import { AutenthicationService } from '../services/autenthication.service';
 })
 export class HomePage {
 
-  constructor(private router: Router,public dbtaskService: DbserviceService,public authenticationSerive:AutenthicationService) {
+  data: any; 
+  
+
+  constructor(private activeroute: ActivatedRoute, private router: Router,public dbtaskService: DbserviceService,public authenticationSerive:AutenthicationService) {
     
+    this.activeroute.queryParams.subscribe(params => { 
+      if (this.router.getCurrentNavigation().extras.state) { 
+        this.data = this.router.getCurrentNavigation().extras.state.login; 
+        console.log(this.data) 
+      }else{this.router.navigate(["/login"])} 
+    }); 
   }
 
   
