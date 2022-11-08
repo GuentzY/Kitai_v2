@@ -16,6 +16,8 @@ import { DbserviceService } from './services/dbservice.service';
 import { AutService } from './services/aut.service';
 import { AutenthicationService } from './services/autenthication.service';
 
+import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -27,6 +29,7 @@ import { AutenthicationService } from './services/autenthication.service';
     DbserviceService,
     AutService,
     AutenthicationService,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
