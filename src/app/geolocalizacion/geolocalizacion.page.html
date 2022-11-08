@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Geolocalizacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label>Latitud: {{Latitud}}</ion-label>
+    </ion-item>
+  </div>
+
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label>Longitud: {{Longitud}}</ion-label>
+    </ion-item>
+  </div>
+
+  <div class="ion-padding">
+      <ion-button expand="full" (click)=obtenerCoordenadas()></ion-button>
+  </div>
+
+
+
+
+  </ion-content>
+
+

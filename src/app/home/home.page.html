@@ -1,10 +1,10 @@
 <ion-header [translucent]="false">
   <ion-toolbar>
     <ion-title>
-      Kitai Sushi sdmsdjsnkuj
+      Kitai Sushi 
     </ion-title>
     <ion-buttons slot="primary">
-      <ion-button (click)="logout()" color="danger" fill="outline">
+      <ion-button (click)="logout()" color="danger" fill="outline" [routerLink]="['/login']">
         Salir
         <ion-icon slot="end" name="log-out-outline"></ion-icon>
       </ion-button>
@@ -14,6 +14,10 @@
 
 
 <ion-content>
+
+  <div class="">
+    <ion-label >Bienvenido, {{data.Usuario}} </ion-label>
+  </div>
   
   <ion-card>
     <ion-card-header>
@@ -65,6 +69,24 @@
     <ion-row>
       <ion-col>
           <ion-button expand="full" [routerLink]="['/menu']">Acompañamientos</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Utilidades</ion-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+  
+      Geolocalizacion
+      
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+          <ion-button expand="full" [routerLink]="['/geolocalizacion']">Ir</ion-button>
       </ion-col>
     </ion-row>
   </ion-card>
