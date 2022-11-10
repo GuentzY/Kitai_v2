@@ -3,7 +3,7 @@ import { ToastController, AlertController } from '@ionic/angular';
 
 import { DbserviceService } from '../services/dbservice.service';
 import { AutenthicationService } from '../services/autenthication.service';
-import { Router, NavigationExtras } from '@angular/router';
+import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
 
 @Component({
@@ -31,13 +31,6 @@ export class LoginPage implements OnInit {
   }
 
   ingresar(){
-    let navigationExtras: NavigationExtras = {
-      state: {
-        login: this.login // Al estado se asignamos un objeto con clave y valor
-      }
-    };
-    this.router.navigate(['/home'],navigationExtras); // navegamos hacia el Home y enviamos información adicional
-  
     // Se valida que el usuario ingreso todos los datos
     if(this.validateModel(this.login)){
       // Se obtiene si existe alguna data de sesión

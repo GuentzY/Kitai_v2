@@ -8,19 +8,10 @@ import { AutenthicationService } from '../services/autenthication.service';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage {  
 
-  data: any; 
-  
+  constructor(private activeroute: ActivatedRoute, private router: Router,public dbtaskService: DbserviceService, public authenticationSerive:AutenthicationService) {
 
-  constructor(private activeroute: ActivatedRoute, private router: Router,public dbtaskService: DbserviceService,public authenticationSerive:AutenthicationService) {
-    
-    this.activeroute.queryParams.subscribe(params => { 
-      if (this.router.getCurrentNavigation().extras.state) { 
-        this.data = this.router.getCurrentNavigation().extras.state.login; 
-        console.log(this.data) 
-      }else{this.router.navigate(["/login"])} 
-    }); 
   }
 
   
