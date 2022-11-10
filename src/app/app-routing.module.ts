@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },  {
+    path: 'pruebaapi',
+    loadChildren: () => import('./pruebaapi/pruebaapi.module').then( m => m.PruebaapiPageModule)
   },
+
 
 ];
 

@@ -17,11 +17,11 @@ import { AutService } from './services/aut.service';
 import { AutenthicationService } from './services/autenthication.service';
 
 import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
-
+import {  HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot()],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule ,IonicStorageModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,
