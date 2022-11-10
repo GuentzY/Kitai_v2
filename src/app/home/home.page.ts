@@ -10,9 +10,7 @@ import { AutenthicationService } from '../services/autenthication.service';
 })
 export class HomePage {  
 
-  constructor(private activeroute: ActivatedRoute, private router: Router,public dbtaskService: DbserviceService, public authenticationSerive:AutenthicationService) {
-
-  }
+  constructor(private activeroute: ActivatedRoute, private router: Router, public dbtaskService: DbserviceService, public authenticationSerive:AutenthicationService) {}
 
   
   /**
