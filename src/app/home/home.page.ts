@@ -27,7 +27,7 @@ export class HomePage {
   }
  
   ionViewWillEnter(){
-    this.router.navigate(['home/perfil']);
+    this.router.navigate(['home/comidas']);
   }
  
   logout(){

@@ -1,3 +1,5 @@
+
+
 <ion-header [translucent]="false">
   <ion-toolbar>
     <ion-title>
@@ -10,80 +12,29 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+  
+  <ion-toolbar>
+  <ion-segment value="comidas" (ionChange)="segmentChanged($event)">
+    <ion-segment-button  value="comidas">
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="pedidos">
+      <ion-icon name="briefcase-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="cuentas">
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
 
+
+
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-title>Promociones Kitai</ion-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-  
-      Los mas ricos y convenientes
-      <img src="assets/img/aji-de-gallina.jpg" alt="">
-    </ion-card-content>
-  
-    <ion-row>
-      <ion-col>
-          <ion-button expand="full" [routerLink]="['/menu']">Promociones</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  
-  <ion-card>
-    <ion-card-header>
-      <ion-title>Los mejores rolls</ion-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-  
-      Fusion Japonesa - Peruana, rolls especiales y mucho mas
-      <img src="assets/img/aji-de-gallina.jpg" alt="">
-    </ion-card-content>
-  
-    <ion-row>
-      <ion-col>
-          <ion-button expand="full" [routerLink]="['/menu']" >Rolls de la carta</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  
-  <ion-card>
-    <ion-card-header>
-      <ion-title>Para picar</ion-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-  
-      Sashimis, ceviches, camarones apanados
-      <img src="assets/img/aji-de-gallina.jpg" alt="">
-    </ion-card-content>
-  
-    <ion-row>
-      <ion-col>
-          <ion-button expand="full" [routerLink]="['/menu']">Acompañamientos</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-title>Utilidades</ion-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-  
-      Geolocalizacion
-      
-    </ion-card-content>
-  
-    <ion-row>
-      <ion-col>
-          <ion-button expand="full" [routerLink]="['/geolocalizacion']">Ir</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
+  <ion-router-outlet></ion-router-outlet>
 </ion-content>
+
+
+
+
