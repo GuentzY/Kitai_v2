@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
-import { Cuentas } from '../cuentas/cuentas.component';
-import { Pedidos } from '../pedidos/pedidos.component';
+import { CuentasComponent } from '../cuentas/cuentas.component';
+import { PedidosComponent } from '../pedidos/pedidos.component';
 import { InicioComponent } from '../inicio/inicio.component';
 
 const routes: Routes = [
@@ -12,11 +12,11 @@ const routes: Routes = [
     children:[
       {
         path:'cuentas',
-        component: Cuentas
+        component: CuentasComponent
       },
       {
         path:'pedidos',
-        component: Pedidos
+        component: PedidosComponent
       },
       {
         path:'comidas',
