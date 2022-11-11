@@ -17,7 +17,7 @@ export class LoginPage implements OnInit {
     Usuario:"",
     Password:""
   }
-  // variable para mostrar el campo faltante
+
   field:string="";
 
   constructor (public toastController: ToastController,
@@ -29,20 +29,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-/*
-  ingresar(){
-    // Se valida que el usuario ingreso todos los datos
-    if(this.validateModel(this.login)){
-      // Se obtiene si existe alguna data de sesión
-      this.authenticationSerive.login(this.login);
-    
-      
-    }
-    else{
-      this.presentToast("Falta: "+this.field);
-    }
-  }
-  */
+
  
   ingresar(){
     // Se valida que el usuario ingreso todos los datos

@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -25,13 +25,13 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: '**',
-    loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
-  },  {
     path: 'pruebaapi',
     loadChildren: () => import('./pruebaapi/pruebaapi.module').then( m => m.PruebaapiPageModule)
   },
-
+  {
+    path: '**',
+    loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
+  },
 
 ];
 
