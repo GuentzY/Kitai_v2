@@ -27,7 +27,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
+  },  {
+    path: 'pruebaapi',
+    loadChildren: () => import('./pruebaapi/pruebaapi.module').then( m => m.PruebaapiPageModule)
   },
+
 
 ];
 
