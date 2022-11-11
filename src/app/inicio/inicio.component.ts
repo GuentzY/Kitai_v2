@@ -23,5 +23,9 @@ export class InicioComponent implements OnInit {
   navigate(){
     this.router.navigate(['/geolocalizacion'])
   }
+  
+  navigate1(){
+    this.router.navigate(['/pruebaapi'])
+  }
 
 }
