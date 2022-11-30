@@ -17,17 +17,16 @@
       </ion-card-title>
       <ion-card-content>
         <ion-item>
-          <ion-label position="floating">Usuario</ion-label>
+          <ion-label class="floatUser" position="floating">Usuario</ion-label>
           <ion-input type="text" [(ngModel)]="login.Usuario"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating" >Password</ion-label>
-         
+          <ion-label class="floatPassword" position="floating" >Password</ion-label>         
           <ion-input type="password" [(ngModel)]="login.Password"></ion-input>
         </ion-item>
       </ion-card-content>
-      <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
-      <ion-button shape="block" (click)="registrar()">Registrarse</ion-button>
+      <ion-button class="btnIngresar" shape="block" (click)="ingresar()">Ingresar</ion-button>
+      <ion-button class="btnRegistrar" shape="block" (click)="registrar()">Registrarse</ion-button>
     </ion-card>
   </div>
   
