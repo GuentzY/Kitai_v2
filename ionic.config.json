@@ -2,7 +2,7 @@
   "name": "main",
   "integrations": {
     "capacitor": {
-      "enabled": false
+      "enabled": true
     },
     "cordova": {}
   },
