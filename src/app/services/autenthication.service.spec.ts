@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { AutenthicationService } from './autenthication.service';
-
+/* 
 describe('AutenthicationService', () => {
   let service: AutenthicationService;
 
@@ -14,3 +14,4 @@ describe('AutenthicationService', () => {
     expect(service).toBeTruthy();
   });
 });
+*/

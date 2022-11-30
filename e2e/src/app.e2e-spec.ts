@@ -9,7 +9,7 @@ describe('Kitai App', () => {
     page = new AppPage();
   });
 
-  it('La página del login debe mostrar el texto "SUSHI KITAI" y el mensaje "Bienvenido!"', () => {
+  it('La página del login debe mostrar el texto "SUSHI KITAI" y el mensaje "Bienvenido! "', () => {
     page.navigateTo();
     expect(page.getPageTitle()).toContain('Sushi Kitai', 'Bienvenido!');
   });

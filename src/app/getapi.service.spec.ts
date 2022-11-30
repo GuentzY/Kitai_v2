@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { GetapiService } from './getapi.service';
-
+/* 
 describe('GetapiService', () => {
   let service: GetapiService;
 
@@ -14,3 +14,4 @@ describe('GetapiService', () => {
     expect(service).toBeTruthy();
   });
 });
+*/

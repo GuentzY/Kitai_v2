@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { PruebaapiPage } from './pruebaapi.page';
-
+/* 
 describe('PruebaapiPage', () => {
   let component: PruebaapiPage;
   let fixture: ComponentFixture<PruebaapiPage>;
@@ -22,3 +22,4 @@ describe('PruebaapiPage', () => {
     expect(component).toBeTruthy();
   });
 });
+*/
