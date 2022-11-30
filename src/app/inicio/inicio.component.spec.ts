@@ -26,7 +26,7 @@ describe('InicioComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('El children de la página de inicio debe mostrar el botón "Salir"', () => {
+  it('El children de la página de inicio debe mostrar el botón "PROMOCIONES KITAI"', () => {
     const data=fixture.nativeElement;
     expect(data.querySelector("#promo1").textContent).toContain('Promociones Kitai');
   });
