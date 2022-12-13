@@ -1,10 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Nuestra Cocina</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="atras5()" color="" fill="outline" [routerLink]="['/home']">
+        Atras
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
   <ion-list>
     <ion-item *ngFor="let item of getdata">
       {{item.name}}
@@ -13,14 +20,14 @@
     </ion-item>
     
   </ion-list>
-</ion-content>
-<ion-card>
+  <ion-card>
 
 
 
-  <img src="cocineros.jpg" alt="">
+    <img src="assets/img/Medallon-de-Filete-de-Res.jpg" alt="">
+    
   
-
-
-
-</ion-card>
+  
+  
+  </ion-card>
+</ion-content>

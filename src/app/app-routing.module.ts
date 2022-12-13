@@ -29,9 +29,18 @@ const routes: Routes = [
     loadChildren: () => import('./pruebaapi/pruebaapi.module').then( m => m.PruebaapiPageModule)
   },
   {
+    path: 'promociones',
+    loadChildren: () => import('./promociones/promociones.module').then( m => m.PromocionesPageModule)
+  },
+  {
+    path: 'papicar',
+    loadChildren: () => import('./papicar/papicar.module').then( m => m.PapicarPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
   },
+  
 
 ];
 

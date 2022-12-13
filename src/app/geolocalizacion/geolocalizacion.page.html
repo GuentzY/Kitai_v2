@@ -2,6 +2,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Geolocalizacion</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="atras4()" color="" fill="outline" [routerLink]="['/home']">
+        Atras
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -9,13 +15,13 @@
   
   <div class="ion-padding">
     <ion-item>
-      <ion-label>Latitud: {{Latitud}}</ion-label>
+      <ion-label>Latitud: {{latitud}}</ion-label>
     </ion-item>
   </div>
 
   <div class="ion-padding">
     <ion-item>
-      <ion-label>Longitud: {{Longitud}}</ion-label>
+      <ion-label>Longitud: {{longitud}}</ion-label>
     </ion-item>
   </div>
 

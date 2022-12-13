@@ -1,58 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Para beber
+      Para Picar
     </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="atras2()" color="" fill="outline" [routerLink]="['/home']">
+        Atras
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
   
-  <ion-card>
+<ion-card>
     <ion-item>
-      <ion-label>Bebidas</ion-label>
+      <ion-label>Ceviche de reineta</ion-label>
     </ion-item>
     <ion-card-content>
       <img src="assets/img/aji-de-gallina.jpg" alt="">
     </ion-card-content>
 
     <ion-card-content>
-    Surtido de bebidas frias (Consultar disponibilidad).
+    Exquisita ceviche de reineta con leche de tigre al estilo peruano.
     </ion-card-content>
     <ion-card-content>
-      $1.290
+      $3.990
     </ion-card-content>
 </ion-card>
 
 <ion-card>
   <ion-item>
-    <ion-label>Cervezas</ion-label>
+    <ion-label>Gyosas</ion-label>
   </ion-item>
   <ion-card-content>
     <img src="assets/img/aji-de-gallina.jpg" alt="">
   </ion-card-content>
 
   <ion-card-content>
-  Las mejores cervezas del sur de Chile (350cc). 
+  Masitas rellenas de pollo, camarón o cerdo (consultar disponibilidad), salteadas en aceite de sésamo (5 unidades). 
   </ion-card-content>
   <ion-card-content>
-    $1.890
+    $3.290
   </ion-card-content>
 </ion-card>
 
 <ion-card>
 <ion-item>
-  <ion-label>Jugos naturales</ion-label>
+  <ion-label>Sashimi de salmón</ion-label>
 </ion-item>
 <ion-card-content>
   <img src="assets/img/aji-de-gallina.jpg" alt="">
 </ion-card-content>
 
 <ion-card-content>
-Los mejores jugos naturales con fruta fresca de la estación (Consultar disponibilidad).
+8 cortes del mejor salmón chileno.
 </ion-card-content>
 <ion-card-content>
-  $1.690
+  $5.990
 </ion-card-content>
 </ion-card>
+
+

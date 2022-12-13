@@ -3,6 +3,12 @@
     <ion-title>
       Sushi Kitai
     </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="atras3()" color="" fill="outline" [routerLink]="['/home']">
+        Atras
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -15,14 +21,19 @@
     </ion-item>
 
     <ion-card-content>
-
-      descripcion..
+      
       <img src="assets/img/aji-de-gallina.jpg" alt="">
+      
+    </ion-card-content>
+    <ion-card-content>
+      
+    Roll relleno de queso crema, cebollin y pollo, envuelto en masa tempura.
+      
     </ion-card-content>
 
-    <ion-item>
-      <ion-button fill="outline" slot="end">Menu Rolls</ion-button>
-    </ion-item>
+    <ion-card-content>
+      $4.990
+    </ion-card-content>
   </ion-card>
 
   <ion-card>
@@ -31,59 +42,67 @@
     </ion-item>
 
     <ion-card-content>
-      
-      Descripcion...
-      <img src="assets/img/Cerdo-a-la-Mostaza.jpg" alt="">
+      <img src="assets/img/Cerdo-a-la-Mostaza.jpg" alt=""> 
+    </ion-card-content>  
+    <ion-card-content>
+    Roll relleno de queso crema y camaron, envuelto en palta y ceviche de la casa.
     </ion-card-content>
 
-    <ion-item>
-      <ion-button fill="outline" slot="end">Menu Rolls</ion-button>
-    </ion-item>
+    <ion-card-content>
+      $5.990
+    </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <ion-label>Ceviche de reineta</ion-label>
+      <ion-label>Roll de palta</ion-label>
     </ion-item>
 
     <ion-card-content>
-      descripcion...
+    
       <img src="assets/img/Filete-de-Salmon-Dorado.jpg" alt="">
     </ion-card-content>
-
-    <ion-item>
-      <ion-button fill="outline" slot="end">Menu Ceviche</ion-button>
-    </ion-item>
+    
+    <ion-card-content>
+      Roll relleno de queso crema, cebollin y proteina a elección (Pollo, camaron, salmón), envuelto en palta.
+      </ion-card-content>
+      <ion-card-content>
+        $4.990
+      </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <ion-label>Promocion 50 piezas</ion-label>
+      <ion-label>Roll de queso crema</ion-label>
     </ion-item>
 
     <ion-card-content>
-      Piezas surtidas....
-      <img src="assets/img/Medallon-de-Filete-de-Res.jpg" alt="">
+     
+    <img src="assets/img/Medallon-de-Filete-de-Res.jpg" alt="">
     </ion-card-content>
-
-    <ion-item>
-      <ion-button fill="outline" slot="end">Promocion/Piezas</ion-button>
-    </ion-item>
+    <ion-card-content>
+      Roll relleno de palta, cebollin proteina a elección (Pollo, camaron, salmón), envuelto en queso crema.
+      </ion-card-content>
+      <ion-card-content>
+        $4.990
+      </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <ion-label>----</ion-label>
+      <ion-label>Roll de salmón</ion-label>
     </ion-item>
 
     <ion-card-content>
-      -----
+      
       <img src="assets/img/Medallon-de-Pavo-Relleno.jpg" alt="">
     </ion-card-content>
-
-    <ion-item>
-      <ion-button fill="outline" slot="end">----</ion-button>
-    </ion-item>
+    <ion-card-content>
+      Roll relleno de queso crema, cebollin y proteina a elección (Pollo, camaron, salmón), envuelto en salmón.
+      </ion-card-content>
+      <ion-card-content>
+        $4.990
+      </ion-card-content>
   </ion-card>
 
 </ion-content>

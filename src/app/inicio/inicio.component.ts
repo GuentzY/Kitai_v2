@@ -20,6 +20,14 @@ export class InicioComponent implements OnInit {
     this.router.navigate(['/menu'])
   }
   
+  navigate2(){
+    this.router.navigate(['/promociones'])
+  }
+  
+  navigate3(){
+    this.router.navigate(['/papicar'])
+  }
+
   navigate(){
     this.router.navigate(['/geolocalizacion'])
   }
@@ -27,5 +35,6 @@ export class InicioComponent implements OnInit {
   navigate1(){
     this.router.navigate(['/pruebaapi'])
   }
-
+  
+  
 }

@@ -31,5 +31,7 @@ export class GeolocalizacionPage implements OnInit {
   
   ngOnInit() {
   }
-
+  atras4(){
+    this.router.navigate(['/home'])
+  }
 }

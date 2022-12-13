@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetapiService } from '../getapi.service';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-pruebaapi',
   templateUrl: './pruebaapi.page.html',
@@ -7,7 +8,7 @@ import { GetapiService } from '../getapi.service';
 })
 export class PruebaapiPage implements OnInit {
   getdata:any[]=[];
-  constructor(public _services: GetapiService) { 
+  constructor(public _services: GetapiService, private activeroute: ActivatedRoute, private router: Router,) { 
     this._services.getdata<any[]>("").subscribe(data => {
       this.getdata = data
       console.log(this.getdata);
@@ -17,6 +18,9 @@ export class PruebaapiPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+  atras5(){
+    this.router.navigate(['/home'])
   }
 
 }
