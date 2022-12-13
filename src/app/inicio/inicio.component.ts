@@ -20,11 +20,11 @@ export class InicioComponent implements OnInit {
     this.router.navigate(['/menu'])
   }
   
-  navigate2(){
+  promo1(){
     this.router.navigate(['/promociones'])
   }
   
-  navigate3(){
+  promo2(){
     this.router.navigate(['/papicar'])
   }
 
